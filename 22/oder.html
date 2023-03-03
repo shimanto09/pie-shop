@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="site.css">
+  <!-- <style>
+    @media screen and (min-width:768px){
+      articel{
+        width: 350px;
+      }
+    }
+    .pie{
+      margin-bottom: 20px;
+    }
+    .input-group{
+      margin-bottom:20px
+    }
+    .input-group input,
+    .input-group textarea,
+    .input-group select
+    {
+      padding: 10px;
+      border: 1px solid#999;
+      border-radius: 2px;
+      width: 100%;
+    }
+  .lable{
+    font-weight: 600;
+  }
+  input[type='reset']{
+    background: transparent;
+    border:0;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+ .input-group[type='submit']{
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 10px;
+
+ }
+
+  </style> -->
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="pies.html">Pies</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <aside><img src="/img/logo.png" alt="bethany's pie shop"></aside>
+    <article>
+       <!-- add contact -->
+
+       <h1>Order pie's </h1>
+       <div class="pie">
+        <img src="" />
+        <div class="Columns">
+          <div class="title"></div>
+          <div class="price"></div>
+        </div>
+        <cp class="desc"></p>
+       </div>
+      
+       <from action="http://localhost:7071/api/post"method="POST">
+        <input type="hidden" id="pie-order" name="pie-order">
+        <input type="hidden" id="location" name="location">
+
+        <div class="input-group">
+          <div><label for="first-name">first name</label></div>
+          <div><input type="text" name="first-name" id="first-name" /></div>
+        </div>
+
+        <div class="input-group">
+          <div><label for="last-name">Last name</label></div>
+          <div><input type="text" name="last-name" id="last-name" /></div>
+        </div>
+
+        <div class="input-group">
+          <div><label for="address">address</label></div>
+          <div><input type="text" name="address" id="address" /></div>
+        </div>
+        <div class="input-group">
+          <div><label for="city">city</label></div>
+          <div>
+            <select name="city" id="city">
+              <option value="Dhaka">Dhaka</option>
+              <option value="Khulna">Khulna</option>
+              <option value="Magura">Magura</option>
+              <option value="Foridpur">Foridpur</option>
+              <option value="Norail">Norail</option>
+              <option value="Chittagong">Chittagong</option>
+              <option value="Sylhet">Sylhet</option>
+              <option value="feni">feni</option>
+              <option value="Manikgong">Manikgong</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-group">
+          <div><label for="Post-code">Postcod</label></div>
+          <div><input type="text" name="Post-code" id="Post-code"></div>
+        </div>
+
+        <div class="input-group">
+          <div><label for="comments">comments</label></div>
+          <div>
+            <textarea name="comments" 
+            id="" cols="30" 
+            rows="10">
+          </textarea>
+          </div>
+        </div>
+        <input type="reset" value="Reset">
+        <input type="Submit" value="Order">
+        </from>
+      </article>
+  </main>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/pies.html">Pies</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script  type="module" src="oder.js"></script>
+</body>
+</html>
